@@ -1,0 +1,14 @@
+<html>
+<head>
+
+<title>Restaurant Oddey</title>
+<link rel='stylesheet' href='/css/restaurant.css' type='text/css'></link>
+</head>
+<body>
+  <% restaurants.each do |restaurant| %>
+  <div class='restaurant-display-tile'>
+    <p>Restaurant id: <%= restaurant.id %> '<%= restaurant.name %>' located at '<%= restaurant.location %>'</p>
+    <p> has <%= restaurant.orders.count %></p>
+  </div>
+</body>
+</html>
